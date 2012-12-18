@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Pages | EJU.ORG{% endblock %}
+{% block content %}
+    <div class=catalog4>
+        <h1 class="catalog">Catalog</h1>
+        {% load set_var %}
+        {% set cat = "" %}
+        {% for url in urls %}
+            {% if cat != url.category %}
+                {% set cat = url.category %}
+                <h2 class="catalog2">{{ cat }}</h2>
+            {% endif %}
+            <div class=catalog5>
+                {% if url.image %}
+                    <a href="{{ url.url }}"><img class=catalog6 src="/media/{{ url.image }}" width=250 ></a>
+                {% endif %}
+                <h3 class="catalog3"><a href="/url/{{ url.id }}">{{ url.title }}</a></h3>
+                <p>{{ url.description|truncatechars:300 }}
+                    <a href="{{ url.url }}" class=catalog7>{{ url.getUrl }}</a>
+                </p>
+
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}{{ categoryname }} | EJU.ORG{% endblock %}
+{% block breadcrumb %}{{ categoryname }}{% endblock %}
+{% block content %}
+    <div class=catalog4>
+        <h2 class="catalog2">{{ categoryname }}</h2>
+        {% if urls_count == 0 %}
+            Sorry, but this category is empty!<br><br>
+        {% endif %}
+        {% for url in urls %}
+            <div class=catalog5>
+                {% if url.image %}
+                    <a href="{{ url.url }}"><img class=catalog6 src="/media/{{ url.image }}" width=250 ></a>
+                {% endif %}
+                <h3 class="catalog3"><a href="{{ url.url }}">{{ url.title }}</a></h3>
+                <p>{{ url.description|truncatechars:300 }}
+                    <a href="{{ url.url }}" class=catalog7>{{ url.getUrl }}</a>
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="pagination">
+    <span class="step-links">
+        {% if urls.has_previous %}
+            <a href="?page={{ urls.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ urls.number }} of {{ urls.paginator.num_pages }}
+        </span>
+
+        {% if urls.has_next %}
+            <a href="?page={{ urls.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+    </div>
+{% endblock %}
+{% block categories_block %}
+    <div id="category_menu" class="opened"><ul>
+        {% for catname in categories %}
+            {% if category_id == catname.id %}
+                <li><a href="/category/{{ catname.id }}" class="active" >{{ catname }}</a></li>
+            {% else %}
+                <li><a href="/category/{{ catname.id }}">{{ catname }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul></div>
+{% endblock %}

@@ -1,0 +1,408 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="shortcut icon" href="http://eju.org/sites/www.eju.org/themes/ecjc_main/images/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="screen, projection" href="http://www.eju.org/sites/www.eju.org/themes/ecjc_main/css/jquery.megamenu.css?N" />
+<link type="text/css" rel="stylesheet" media="screen, projection" href="http://eju.org/sites/www.eju.org/themes/ecjc_main/css/ecjc.css?N" />
+<link type="text/css" rel="stylesheet" media="screen, projection" href="http://eju.org/sites/www.eju.org/themes/ecjc_main/css/style.css?N" />
+<link type="text/css" rel="stylesheet" media="screen, projection" href="http://eju.org/sites/www.eju.org/themes/ecjc_main/css/reset.css?N" />
+
+
+  </head>
+<body>
+
+<style>
+
+    body {
+        font: 12px/18px Arial,Tahoma,Verdana,sans-serif;
+    }
+
+
+    .catalog {
+        font-size: 33px;
+        color: #064356;
+        text-decoration: none;
+        padding: 0;
+        line-height: 45px;
+    }
+
+
+
+    .catalog2 {
+        font-size: 16px;
+        color: #017498;
+        text-decoration: none;
+		padding:20px 0;
+    }
+
+    .catalog3 {
+        font-size: 13px;
+        line-height: 14px;
+        color: #017498;
+        text-decoration: underline;
+		padding:0 0 10px;
+    }
+
+
+    .catalog33 {
+        font-size: 13px;
+        line-height: 14px;
+        color: #017498;
+        text-decoration: underline;
+		padding:0 0 3px;
+    }
+
+
+    .catalog4 {
+        width: 610px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .catalog4 {
+        width: 610px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .catalog5 {
+        padding-bottom:30px;
+        display:block;
+        overflow:hidden;
+
+    }
+
+    .catalog55 {
+        padding-bottom:30px;
+        display:block;
+        overflow:hidden;
+        float:left;
+        width:290px;
+        padding-right:20px;
+        height: 420px;
+    }
+
+
+
+
+
+    .catalog6 {
+        border:1px solid #ddd;
+        border-radius:4px;
+        float:right;
+        margin-left:20px;
+        padding:5px;
+		width:274px;
+		height:154px;
+    }
+
+    .catalog66 {
+        border:1px solid #ddd;
+        border-radius:4px;
+        padding:5px;
+		width:290px;
+		height:163px;
+    }
+
+
+    .catalog7 {
+        padding:5px 0 0;
+        display:block;
+
+    }
+
+    .catalog8 {
+color:#555;
+font-weight:700;
+
+    }
+
+a.catalog99, a:link .catalog99, .catalog99
+{
+        padding:0;
+        display:block;
+		color:#ff6600;
+		text-decoration:none;
+    }
+
+    .catalog10 {
+        padding:0; margin:0 0 5px;
+        display:block;
+    }
+
+.right_cr {
+width: 300px;
+float: left;
+padding: 45px 0 0 15px;
+background-image: url(../images/side_right_bg.jpg);
+background-position: top left;
+background-repeat: no-repeat;
+}
+
+
+a.mm-item-link:hover 
+
+{
+background-color: #ddd;
+background-image: none;
+}
+
+#header {
+background-image: url(http://www.eju.org/sites/www.eju.org/themes/ecjc_main/images/header_survey_bg.jpg);
+
+}
+#header_news_m_bg {
+height: 85px;
+margin-bottom: 5px;
+}
+
+
+#logo_news {
+float: left;
+height: 74px;
+margin-left: 0;
+margin-top: 4px;
+width: 173px;
+position: relative;
+left: +10px;
+}
+
+
+
+
+
+#header_t {
+height: 20px;
+}
+
+
+#head_news_txt {
+font-size: 28px;
+line-height: 85px;
+padding-left: 20px;
+}
+
+#header_news_m_r #edit-global-input-wrapper.form-item input {
+width: 322px;
+}
+
+/*----------------- CATEGORIES -------------------------*/
+
+#category_menu
+{padding-bottom:30px;}
+
+#category_menu li {
+  padding:0;
+  margin:1px 0; }
+
+#category_menu li a {
+    display:block;
+    margin:0;
+    padding:5px 15px;
+    color:#666;
+	text-shadow:0 1px 0 white;
+    background:#dfdfdf; 
+	text-decoration:none;
+  font-size:14px;	
+font-weight:700;
+	}
+
+ #category_menu li a:hover {
+      color:#fff;
+      background:#5394BF;
+	  text-shadow:0 -1px 0 #369;
+      text-decoration:none; }
+
+
+ #category_menu li a.active {
+      color:#fff;
+      background:#5394BF;
+	  text-shadow:0 -1px 0 #369;
+      text-decoration:none; }
+
+ul.categories li {
+  display:inline;
+  border-bottom:none;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  padding:0;
+  font-size:15px;
+  line-height:21px; }
+
+.box-s .content .categories {
+  padding:0 0 3px 0; }
+
+.box-s .content .categories li {
+  font-size:15px; }
+
+
+</style>
+
+
+
+	<div class="wrapper" class="front">
+		<div id="header">
+    	<div id="header_t">
+    		<!-- <div id="header_t_l">
+                 
+          
+            
+            
+                </div>
+        	<div id="header_t_c">
+            	
+            </div>
+            <div id="header_t_r">
+            
+				            </div> -->
+        	<div class="clearFloat"></div>
+    	</div><!-- #header_top-->
+                <div id="header_news_m_bg">
+        	<div id="header_news_m">
+            	<div id="header_news_m_l">
+                	<div id="logo_news">
+						<a href="/">
+							<img width="173" height="74" src="http://pages.eju.org/media/img/logopages.png" title="European Jewish Union" alt="European Jewish Union" />
+						</a>
+					</div>
+					<div id="head_news_txt">PAGES</div>
+										
+                </div>
+                <div id="header_news_m_r">
+											  <form action="/search"  accept-charset="UTF-8" method="post" id="ecjc-global-search-input-main-form">{% csrf_token %}
+<div style="margin-top:14px;"><div class="form-item" id="edit-global-input-wrapper">
+ <input type="text" maxlength="128" name="what" id="edit-global-input" size="60" value="" class="form-text form-autocomplete ECJC_all_search" />
+</div>
+<input type="image" name="submit" id="edit-submit-1"  class="form-submit search_btn" src="http://eju.org/sites/www.eju.org/themes/ecjc_main/images/search_btn.gif" />
+</div></form>
+					                </div>
+            </div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+<!-- menu-->		
+<div id="header_b_bg">
+<div id="main_menu">
+<div id="main_menu_l">
+<ul class="megamenu" style="display: block; ">
+<li class="mm-item" style="float: left; "><a href="http://www.eju.org" class="mm-item-link">Main</a></li>
+<li class="mm-item" style="float: left; "><a href="http://www.eju.org/news" class="mm-item-link">News</a></li>
+<li class="mm-item" style="float: left; "><a href="http://media.eju.org/videos" class="mm-item-link">Video</a></li>
+<li class="mm-item" style="float: left; "><a href="http://media.eju.org/pictures" class="mm-item-link">Photo</a></li>
+<li class="mm-item" style="float: left; "><a href="http://base.eju.org" class="mm-item-link">Base</a></li>
+<li class="mm-item" style="float: left; "><a href="http://people.eju.org" class="mm-item-link">People</a></li>
+<li class="mm-item" style="float: left; "><a href="http://blogs.eju.org" class="mm-item-link">Blogs</a></li>
+<li class="mm-item" style="float: left; "><a href="http://dating.eju.org" class="mm-item-link">Dating</a></li>
+<li class="mm-item" style="float: left; "><a href="http://job.eju.org" class="mm-item-link">Job</a></li>
+<li class="active-trail first active mm-item" style="float: left; "><a href="http://pages.eju.org/" class="active-trail first active active mm-item-link mm-item-link-hover">Pages</a></li>
+<li class="mm-item" style="float: left; "><a href="http://www.eju.org/calendar" class="mm-item-link">Calendar</a></li>
+<li class="last mm-item" style="float: left; "><a href="http://www.eju.org//about" class="last mm-item-link">About</a></li>
+</ul>
+</div>
+<div id="main_menu_r">
+<div class="subscribe alignRight"><a href="http://feeds.feedburner.com/jewishunion" target="_blank" title="RSS"><img class="rss" src="http://www.eju.org/sites/www.eju.org/themes/ecjc_main/images/rss.gif" align="middle" width="16" height="16"></a></div>
+</div>
+<div class="clearFloat"></div>
+</div>
+</div>
+<!-- end menu-->
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- #header_news_middle-->
+            					
+
+		</div><!-- #header-->	
+				<div id="middle">
+			<div id="container">
+				        
+				<div id="content" class="center_cr">
+                    <div class="breadcrumbs"><a href="http://eju.org">EJU.org</a> > <a href="http://pages.eju.org">Pages</a> > <span class="breadcrumbcurrent"><b>
+                        {% block breadcrumb %}
+                            Some page
+                        {% endblock %}
+                        </b></span></div>
+					{% block content %}
+						content
+					{% endblock %}
+				</div><!-- #content-->
+            
+				<div class="sidebar right_cr" id="sideRight">
+                     {% block categories_block %}
+                     {% endblock %}
+					 {% block sidebar %}
+						<img src="http://www.eju.org/sites/www.eju.org/themes/ecjc_main/images/1new.jpg"><br><br>
+						<img src="http://www.eju.org/sites/www.eju.org/themes/ecjc_main/images/911_banner.jpg"><br><br>
+						<p><iframe frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Feuropeanjewishunion&amp;width=300&amp;colorscheme=light&amp;connections=12&amp;stream=false&amp;header=false&amp;height=268" style="border:none; overflow:hidden; width:300px; height:290px;"></iframe></p>
+						<br><br>
+					 {% endblock %}
+			
+				</div><!-- .sidebar#sideRight -->
+							</div><!-- #container-->
+
+		</div><!-- #middle-->
+        {% block footer %}		
+		<div id="footer_bg_s">
+			<div id="footer">
+				
+
+<div id="footer_row_b">
+	<div class="item" id="cols-1fb">
+	<p class="ftitle_b">FOLLOW US ON TWITTER</p>
+	<div id="cols-1fb-twitts"><!-- #here js will be output twitts --></div> 
+    <p><a href="http://twitter.com/jewisheurope"><strong>More Twitts</strong></a></p>
+</div>
+	<div class="item" id="cols-2fb">
+		<p class="ftitle_b">NAVIGATE</p>
+        <ul class="links navigate-menu"><li class="menu-789 first"><a href="/" class="menu-789 first">Main</a></li>
+<li class="menu-790 active"><a href="/news" class="menu-790 active">News</a></li>
+<li class="menu-791"><a href="http://media.eju.org/videos" class="menu-791">Video</a></li>
+<li class="menu-793"><a href="http://media.eju.org/pictures" class="menu-793">Photo</a></li>
+<li class="menu-795"><a href="http://base.eju.org" class="menu-795">EJU Base</a></li>
+<li class="menu-5515"><a href="http://people.eju.org" class="menu-5515">EJU People</a></li>
+<li class="menu-797"><a href="http://blogs.eju.org" class="menu-797">Blogs</a></li>
+<li class="menu-796"><a href="http://dating.eju.org" class="menu-796">Dating</a></li>
+<li class="menu-794"><a href="http://job.eju.org" class="menu-794">Job</a></li>
+<li class="menu-8589 last"><a href="/calendar" class="menu-8589 last">Calendar</a></li>
+</ul>		<span id="sitemap"><a href="/site-map" title="Site Map">Site Map</a></span>
+	</div>
+	<div class="item" id="cols-3fb">
+		<p class="ftitle_b">OTHER</p>
+		<ul class="links other-menu"><li class="menu-787 first"><a href="/about" class="menu-787 first">About EJU</a></li>
+<li class="menu-804"><a href="/feedback" class="menu-804">Contact Us</a></li>
+<li class="menu-802"><a href="/terms" class="menu-802">Terms and Conditions</a></li>
+<li class="menu-3366"><a href="/faq" class="menu-3366">FAQs</a></li>
+<li class="menu-3351 last"><a href="/privacy" class="menu-3351 last">Privacy Policy</a></li>
+</ul>	</div>
+</div>
+								<div class="copy">Copyright © 2011-2012 EJU. All Rights Reserved</div>
+								
+			</div><!-- #footer -->
+			
+		</div><!-- #footer_bg -->
+		{% endblock %}
+	</div><!-- #wrapper -->
+</body>
+</html>
+
+
+
+

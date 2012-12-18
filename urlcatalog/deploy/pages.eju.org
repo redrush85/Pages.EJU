@@ -1,0 +1,32 @@
+<VirtualHost *:80>
+    # Описание сервера
+    ServerAdmin admin@eju.org
+    ServerName pages.eju.org
+            
+    # Логи
+    ErrorLog    /home/django-projects/urlcatalog/logs/error.log
+    CustomLog   /home/django-projects/urlcatalog/logs/access.log common
+                        
+    # wsgi-обработчик (см. ниже)
+    WSGIScriptAlias / /home/django-projects/urlcatalog/deploy/django.wsgi
+
+    # Параметры запуска wsgi
+    WSGIDaemonProcess dw-site user=dw group=dw home=/home/django-projects/urlcatalog/media/ \
+    processes=2 threads=4 maximum-requests=100 display-name=apache-dw-wsgi
+    WSGIProcessGroup dw-site
+                                                                  
+    # Статические файлы django-админки
+    Alias "/media_admin/" "/usr/lib/pymodules/python2.7/django/contrib/admin/media/"
+    <Location "/media_admin/">
+	SetHandler None
+    </Location>
+    
+    Alias /static/admin/ /usr/lib/pymodules/python2.7/django/contrib/admin/media/
+                                                                                          
+    # Статические файлы проекта
+    Alias "/media/" "/home/django-projects/urlcatalog/media/"
+    <Location "/media/">
+	SetHandler None
+    </Location>
+</VirtualHost>
+

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %} {{ title }} | EJU.ORG{% endblock %}
+{% block breadcrumb %}{{ title }}{% endblock %}
+{% block content %}
+	{{ title }}
+	{%  if imageurl %}
+		<img src="{{ imageurl }}" width="320">
+	{% endif %}
+	</br>
+	{{ title.description }}
+	{% csrf_token %}
+{% endblock %}
+{% block categories_block %}
+    <div id="category_menu" class="opened"><ul>
+        {% for catname in categories %}
+            <li><a href="/category/{{ catname.id }}">{{ catname }}</a></li>
+        {% endfor %}
+    </ul></div>
+{% endblock %}

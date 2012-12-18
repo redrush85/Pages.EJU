@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %} Pages - Main | EJU.ORG{% endblock %}
+{% block breadcrumb %}Main{% endblock %}
+{% block content %}
+    {% load set_var %}
+    {% set cat = "" %}
+    <div class=catalog55>
+    {% for url in urls %}
+        {% if cat != url.category %}
+            {% if cat != "" %}
+                </div><div class=catalog55>
+            {% endif %}
+            {% set cat = url.category %}
+            <!--  First element -->
+			<h2 class="catalog2">
+                <a href="/category/{{ url.category_id }}">{{ cat }}</a>
+            </h2>
+
+            <h3 class=catalog3><a href="{{ url.url }}">{{ url.name }}</a></h3>
+
+            {% if url.image %}
+                <a href="{{ url.url }}"><img class=catalog66 src="/media/{{ url.thumbnail }}" width=250 ></a>
+            {% endif %}
+
+            <p>
+                {{ url.description|truncatechars:100 }}
+                <a href="{{ url.url }}" class=catalog99>{{ url.geturl }}</a>
+            </p>
+            <!--  End first element -->
+        {% else %}
+            <!--  Else elements -->
+            <span class="catalog10">
+               <h3 class=catalog33><a href="{{ url.url }}">{{ url.name }}</a></h3> <a href="{{ url.url }}" class=catalog99>{{ url.geturl }}</a>
+            </span>
+            <!--  End else elements -->
+
+			
+        {% endif %}
+    {% endfor %}
+    </div>
+{% endblock %}
+{% block categories_block %}
+<div id="category_menu" class="opened"><ul>
+    {% for catname in categories %}
+        <li><a href="/category/{{ catname.id }}">{{ catname }}</a></li>
+{% endfor %}   
+</ul></div>
+{% endblock %}

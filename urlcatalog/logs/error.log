@@ -1,0 +1,111 @@
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101] mod_wsgi (pid=13813): Exception occurred processing WSGI script '/home/django-projects/urlcatalog/deploy/django.wsgi'.
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101] Traceback (most recent call last):
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/wsgi.py", line 241, in __call__
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]     response = self.get_response(request)
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/base.py", line 153, in get_response
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/base.py", line 228, in handle_uncaught_exception
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]     return callback(request, **param_dict)
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/utils/decorators.py", line 91, in _wrapped_view
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]     response = view_func(request, *args, **kwargs)
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/views/defaults.py", line 32, in server_error
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]     t = loader.get_template(template_name) # You need to create a 500.html template.
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/template/loader.py", line 145, in get_template
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]     template, origin = find_template(template_name)
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/template/loader.py", line 138, in find_template
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101]     raise TemplateDoesNotExist(name)
+[Wed Sep 19 05:28:26 2012] [error] [client 195.24.234.101] TemplateDoesNotExist: 500.html
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101] mod_wsgi (pid=13814): Exception occurred processing WSGI script '/home/django-projects/urlcatalog/deploy/django.wsgi'.
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101] Traceback (most recent call last):
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/wsgi.py", line 241, in __call__
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]     response = self.get_response(request)
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/base.py", line 153, in get_response
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/base.py", line 228, in handle_uncaught_exception
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]     return callback(request, **param_dict)
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/utils/decorators.py", line 91, in _wrapped_view
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]     response = view_func(request, *args, **kwargs)
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/views/defaults.py", line 32, in server_error
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]     t = loader.get_template(template_name) # You need to create a 500.html template.
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/template/loader.py", line 145, in get_template
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]     template, origin = find_template(template_name)
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/template/loader.py", line 138, in find_template
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101]     raise TemplateDoesNotExist(name)
+[Wed Sep 19 05:28:27 2012] [error] [client 195.24.234.101] TemplateDoesNotExist: 500.html
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101] mod_wsgi (pid=13814): Exception occurred processing WSGI script '/home/django-projects/urlcatalog/deploy/django.wsgi'.
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101] Traceback (most recent call last):
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/wsgi.py", line 241, in __call__
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     response = self.get_response(request)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/base.py", line 153, in get_response
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/base.py", line 228, in handle_uncaught_exception
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     return callback(request, **param_dict)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/utils/decorators.py", line 91, in _wrapped_view
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     response = view_func(request, *args, **kwargs)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/views/defaults.py", line 32, in server_error
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     t = loader.get_template(template_name) # You need to create a 500.html template.
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/template/loader.py", line 145, in get_template
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     template, origin = find_template(template_name)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/template/loader.py", line 138, in find_template
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     raise TemplateDoesNotExist(name)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101] TemplateDoesNotExist: 500.html
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101] mod_wsgi (pid=13813): Exception occurred processing WSGI script '/home/django-projects/urlcatalog/deploy/django.wsgi'.
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101] Traceback (most recent call last):
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/wsgi.py", line 241, in __call__
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     response = self.get_response(request)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/base.py", line 153, in get_response
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/core/handlers/base.py", line 228, in handle_uncaught_exception
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     return callback(request, **param_dict)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/utils/decorators.py", line 91, in _wrapped_view
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     response = view_func(request, *args, **kwargs)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/views/defaults.py", line 32, in server_error
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     t = loader.get_template(template_name) # You need to create a 500.html template.
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/template/loader.py", line 145, in get_template
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     template, origin = find_template(template_name)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]   File "/usr/local/lib/python2.7/dist-packages/Django-1.4.1-py2.7.egg/django/template/loader.py", line 138, in find_template
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101]     raise TemplateDoesNotExist(name)
+[Wed Sep 19 05:28:44 2012] [error] [client 195.24.234.101] TemplateDoesNotExist: 500.html
+[Thu Sep 20 08:07:37 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/Catalog/category/
+[Thu Sep 20 08:07:37 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/Catalog/category/
+[Thu Sep 20 08:07:37 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/Catalog/category/
+[Thu Sep 20 08:07:37 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/Catalog/category/
+[Thu Sep 20 08:07:37 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/Catalog/category/
+[Thu Sep 20 08:07:37 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/Catalog/category/
+[Thu Sep 20 08:07:37 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/Catalog/category/
+[Thu Sep 20 08:09:35 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:09:35 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:10:04 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:14:00 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:14:00 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:14:04 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:14:04 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:14:04 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:14:04 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:14:04 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:14:04 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:14:05 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:14:05 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:46 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:46 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:46 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:46 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:46 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:46 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:46 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:46 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/sites/site/
+[Thu Sep 20 08:16:51 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/logout/
+[Thu Sep 20 08:16:52 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:16:52 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:16:53 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:16:54 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:16:54 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:16:55 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:17:19 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:17:19 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:17:20 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:17:20 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:17:54 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:17:54 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/static, referer: http://pages.eju.org/admin/
+[Thu Sep 20 08:29:54 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/media/img/icon_addlink.gif, referer: http://pages.eju.org/admin/Catalog/url/1/
+[Thu Sep 20 08:30:02 2012] [error] [client 195.24.234.101] File does not exist: /usr/lib/pymodules/python2.7/django/contrib/admin/media/img/icon_addlink.gif, referer: http://pages.eju.org/admin/Catalog/url/add/
